@@ -227,44 +227,28 @@
 }
 
 .grow{
-  /* transform: scale(2);
-  transition:all 1s ease-in-out 0.5s; */
-  -webkit-animation: fade 2s ease-in-out;
-  animation: fade 2s ease-in-out;
+  -webkit-animation: fade 3s ease-in-out;
+  animation: fade 3s ease-in-out;
 }
 
-
-
-
-#pic1 {
-  
-  height:20px;
-  width:20px;
-}
-
-#pic2 {
-  
-  height:30px;
-  width:30px;
-}
-
-#pic3 {
-  
-  height:40px;
-  width:40px;
-}
 
 @-webkit-keyframes fade {
-  0% {opacity: 0.3;transform: scale(1);}
-  50% {opacity: 1;transform: scale(2);}
+  0% {opacity: 1;transform: scale(1);}
+  25% {opacity: 1;transform: scale(2);}
+  50% {opacity: 0;}
+  75% {opacity: 1;transform: scale(3);}
   100% {opacity: 0;}
 }
 
 @keyframes fade {
-  0% {opacity: 0.3;transform: scale(1);}
-  50% {opacity: 1;transform: scale(2);}
+  0% {opacity: 1;transform: scale(1);}
+  25% {opacity: 1;transform: scale(2);}
+  50% {opacity: 0;}
+  75% {opacity: 1;transform: scale(3);}
   100% {opacity: 0;}
 }
+
+
 
 .details{
   -webkit-animation: fade 2s ease-in-out;

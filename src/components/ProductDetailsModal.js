@@ -37,15 +37,24 @@ const Details = styled.div`
 height:120px;
 width:100%;
 `
-const TestDiv= styled.div`
-      position:absolute;
-      border-radius: 50%;
-      border:0.5px solid grey;
-      z-index:20;
-      top:${(prop)=>prop.testPosition?.top}px;
-      left:${(prop)=>prop.testPosition?.left}px;
-      display:${(prop)=>prop.testPosition?.display};      
+
+const Circ = styled.div`
+  position:absolute;
+  border-radius:50%;
+  border:0.5px solid grey;
 `
+
+const SmallCircle = styled(Circ)`
+  width:20px;
+  height:20px;
+  z-index:20;
+  top:${(prop)=>prop.testPosition?.top}px;
+  left:${(prop)=>prop.testPosition?.left}px;
+  display:${(prop)=>prop.testPosition?.display};
+`
+
+
+
 
 
 const ProductDetailsModal=(props) =>{
@@ -62,14 +71,14 @@ const ProductDetailsModal=(props) =>{
 
     const handleGrow = (event)=>{
         const x = event.clientX;
-        const y = event.clientY+200;
+        const y = event.clientY;
         setTestPosition({...testPosition,top:y,left:x,display:'block'})
-        setTimeout(()=>setTestPosition({...testPosition,display:'none'}),2200)
+        setTimeout(()=>setTestPosition({...testPosition,display:'none'}),3200)
     } 
   
 
 const HandleClick=()=>{
-  setTimeout(()=>navigate('/product-details',{state:{product}}),2300)
+  setTimeout(()=>navigate('/product-details',{state:{product}}),3300)
   }
 
 
@@ -92,9 +101,9 @@ const HandleClick=()=>{
           </div> 
         </Circle> 
         
-        <TestDiv testPosition={testPosition} className='grow' id='pic3' />
-        <TestDiv testPosition={testPosition} className='grow' id='pic2' />
-        <TestDiv testPosition={testPosition} className='grow' id='pic1' />
+        <SmallCircle testPosition={testPosition} className='grow' />
+        
+        
         <Details>
             <div className="desc">
                 <p>Shirt</p>
