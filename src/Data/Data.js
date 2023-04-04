@@ -18,7 +18,7 @@ const Data =[
         {image:'/logo192.png'}
     ]},
     {id:4,amount:14,picture:[
-        {image:'/logo512.png'},
+        {image:'/female_top.jpg'},
         {image:'/homepage2.jpg'},
         {image:'/homepage1.jpg'},
         {image:'/logo192.png'}
@@ -26,8 +26,8 @@ const Data =[
     {id:5,amount:34,picture:[
         {image:'/pexels-1.jpg'},
         {image:'/pot_lid.jpg'},
-        {image:'/seal.jpg.jpg'},
-        {image:'/tape.png'}
+        {image:'/seal.jpg'},
+        {image:'/tape.jpg'}
     ]},
     {id:6,amount:27,picture:[
         {image:'/pexels-2.jpg'},
@@ -39,7 +39,7 @@ const Data =[
         {image:'/pexels-3.jpg'},
         {image:'/copper_pan.jpg'},
         {image:'/kitchen_pot.png'},
-        {image:'/kitchen_pot2.png'}
+        {image:'/kitchen_pot2.jpg'}
     ]},
     {id:8,amount:16,picture:[
         {image:'/microphone.jpg'},

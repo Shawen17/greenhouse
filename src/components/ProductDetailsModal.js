@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState} from "react";
 import styled from 'styled-components';
 import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
 import FavoriteBorderTwoToneIcon from '@mui/icons-material/FavoriteBorderTwoTone';
@@ -63,22 +63,18 @@ const ProductDetailsModal=(props) =>{
   const [like,setLike]=useState(false)  
   const navigate =useNavigate()
 
-  useEffect(() => {
-    window.addEventListener("click",(event)=>{handleGrow(event)})
-    return () => window.removeEventListener("click", handleGrow);
-        }, );
-
-
-    const handleGrow = (event)=>{
+  const handleGrow = (event)=>{
         const x = event.clientX;
-        const y = event.clientY;
+        const y = event.clientY+200;
         setTestPosition({...testPosition,top:y,left:x,display:'block'})
         setTimeout(()=>setTestPosition({...testPosition,display:'none'}),3200)
     } 
   
 
 const HandleClick=()=>{
-  setTimeout(()=>navigate('/product-details',{state:{product}}),3300)
+    window.addEventListener("click",(event)=>{handleGrow(event)})
+    setTimeout(()=>navigate('/product-details',{state:{product}}),3300)
+    return () => window.removeEventListener("click", handleGrow);
   }
 
 
@@ -91,18 +87,19 @@ const HandleClick=()=>{
  return (
     <div>
       
-      <ProductContainer onClick={HandleClick} >
+      <ProductContainer  >
         <div style={{textAlign:'right'}}>
           <Icon><FavoriteBorderTwoToneIcon className={like ? 'likeStyle':''} onClick={liked} /></Icon>
         </div>
+        <div onClick={HandleClick}>
         <Circle>
           <div  style={{display:'flex',alignItems:'center',justifyContent:'center'}}> 
             <ProductImg src={product.picture[0].image}  alt="product"/>
           </div> 
         </Circle> 
         
-        <SmallCircle testPosition={testPosition} className='grow' />
         
+        <SmallCircle testPosition={testPosition} className='grow' />
         
         <Details>
             <div className="desc">
@@ -117,6 +114,7 @@ const HandleClick=()=>{
                 </div>
             </div>
         </Details>
+        </div>
       </ProductContainer>
     </div>
     )
