@@ -63,9 +63,15 @@ const ProductDetailsModal=(props) =>{
   const [like,setLike]=useState(false)  
   const navigate =useNavigate()
 
+
+  
+
+
   const handleGrow = (event)=>{
         const x = event.clientX;
-        const y = event.clientY+200;
+        const y = event.pageY;
+        // const x = event.clientX;
+        // const y = event.clientY+200;
         setTestPosition({...testPosition,top:y,left:x,display:'block'})
         setTimeout(()=>setTestPosition({...testPosition,display:'none'}),3200)
     } 
@@ -91,7 +97,7 @@ const HandleClick=()=>{
         <div style={{textAlign:'right'}}>
           <Icon><FavoriteBorderTwoToneIcon className={like ? 'likeStyle':''} onClick={liked} /></Icon>
         </div>
-        <div onClick={HandleClick}>
+        <div onClick={HandleClick} >
         <Circle>
           <div  style={{display:'flex',alignItems:'center',justifyContent:'center'}}> 
             <ProductImg src={product.picture[0].image}  alt="product"/>

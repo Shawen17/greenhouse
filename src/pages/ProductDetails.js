@@ -128,7 +128,7 @@ export default function ProductDetails() {
             <TopBar />
             <Wrapper style={{marginTop:20}}>
                 <Back >
-                    <ArrowBackIosNewOutlinedIcon onClick={Handleback} />
+                    <ArrowBackIosNewOutlinedIcon onClick={Handleback} style={{zIndex:20}} />
                 </Back>
                 <Notifications style={{width:'40%',cursor:'pointer'}} >
                     <FavoriteBorderOutlinedIcon />
@@ -157,7 +157,7 @@ export default function ProductDetails() {
             Essential Men's Short-
             Sleeve Crewneck T-Shirt
         </p>
-        <p style={{color:'darkgrey'}} ><StarOutlinedIcon style={{color:'yellow'}} /> 4.9 Ratings  .  2.3k+ Reviews  .  2.9k+ Sold</p>
+        <p style={{color:'darkgrey',textAlign:'center'}} ><StarOutlinedIcon style={{color:'yellow'}} /> 4.9 Ratings  <span id='dot'>.</span>  2.3k+ Reviews  <span id='dot'>.</span>   2.9k+ Sold</p>
         <Tabs >
             <div className='review' >About Item</div>
             <div className='review'>Review</div>
