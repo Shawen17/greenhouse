@@ -165,22 +165,22 @@
 
 @keyframes slideshow {
   0% {
-    background-position: -50 0;
+    background-position-x: 100%;
     background-image:url('./img/homepage1.jpg');
     
   }
   25% {
-    background-position: -100% 0;
+    background-position-x: 0%;
     background-image:url('./img/homepage1.jpg');
     
   }
   50%{
-    background-position: -50% 0;
+    background-position-x: 100%;
     background-image:url('./img/homepage2.jpg');
     
   }
   100%{
-    background-position: -100% 0;
+    background-position-x: 0% 0;
     background-image:url('./img/homepage2.jpg');
     
   }
@@ -270,4 +270,12 @@
   0% {opacity: 0;background-color: whitesmoke;}
   50% {opacity: 0;background-color: whitesmoke;}
   100% {opacity: 1;}
+}
+
+.show{
+  display:'block'
+}
+
+.hide{
+  display: 'none';
 }

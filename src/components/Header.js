@@ -9,7 +9,7 @@ import FlightOutlinedIcon from '@mui/icons-material/FlightOutlined';
 import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import {Items} from './Footer';
-import TopBar from './TopBar';
+// import TopBar from './TopBar';
 
 
 
@@ -27,7 +27,7 @@ const SecondLevel = styled.div`
 `
 
 const Wrapper =styled.div`
-    height:40px;
+    height:60px;
     display:flex;
     align-items:center;
     z-index:9;
@@ -103,7 +103,7 @@ const Header =()=>{
             
             <SecondLevel className='slide'>
                 <Top className={show ? 'show' : '' }>
-                    <TopBar />
+                    
                     <Wrapper style={{marginTop:30}}>
                         <SearchContainer>
                             <Search> <SearchIcon /></Search>

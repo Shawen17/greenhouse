@@ -3,12 +3,19 @@ import ProductPage from './pages/ProductPage';
 import ProductDetails from './pages/ProductDetails';
 import { BrowserRouter, Routes, Route} from "react-router-dom"; 
 
+
+
+
 function App() {
+
+
+  
 
  
 
 return (
     <div >
+      
       <BrowserRouter>
         <Routes>
         <Route path='/' exact element={<ProductPage />}  /> 

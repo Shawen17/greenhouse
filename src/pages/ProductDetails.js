@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import styled from 'styled-components';
-import TopBar from '../components/TopBar';
+// import TopBar from '../components/TopBar';
 import {Wrapper} from '../components/TopBar';
 import {Top,Notifications} from '../components/Header';
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
@@ -125,7 +125,7 @@ export default function ProductDetails() {
   return (
     <div className='details'>
         <Top className={show ? 'show' : '' } >
-            <TopBar />
+            
             <Wrapper style={{marginTop:20}}>
                 <Back >
                     <ArrowBackIosNewOutlinedIcon onClick={Handleback} style={{zIndex:20}} />
