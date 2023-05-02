@@ -17,7 +17,9 @@ const Carousel = (props) => {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((currentSlide - 1 + props.slides.length) % props.slides.length);
+    setCurrentSlide(
+      (currentSlide - 1 + props.slides.length) % props.slides.length
+    );
   };
 
   return (
@@ -25,7 +27,7 @@ const Carousel = (props) => {
       <div
         className="slides"
         style={{
-          transform: `translateX(-${currentSlide * 100}%)`
+          transform: `translateX(-${currentSlide * 100}%)`,
         }}
       >
         {props.slides.map((slide, index) => (
@@ -33,7 +35,7 @@ const Carousel = (props) => {
             className="slide"
             key={index}
             style={{
-              backgroundImage: `url(${slide})`
+              backgroundImage: `url(${slide})`,
             }}
           />
         ))}

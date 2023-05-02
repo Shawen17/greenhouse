@@ -1,6 +1,3 @@
-
-
-
 .App {
   text-align: center;
 }
@@ -40,242 +37,267 @@
   }
 }
 
-.show{
-  z-index:9;
-  background-color:whitesmoke;
+.show {
+  z-index: 9;
+  background-color: whitesmoke;
 }
 
-.gridscroll{
+.gridscroll {
   display: flex;
-  margin:0px;
+  margin: 0px;
   position: fixed;
   align-items: center;
   justify-content: space-between;
-  background-color:whitesmoke;
-  height:80px;
+  background-color: whitesmoke;
+  height: 80px;
   bottom: 0;
   left: 0;
-  right:0;
-  padding:10px;
-  }
+  right: 0;
+  padding: 10px;
+}
 
-.footer-item{
-  color:darkgrey;
+.footer-item {
+  color: darkgrey;
   cursor: pointer;
 }
 
-.footer-item p{
+.footer-item p {
   font-size: 13px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: bold;
 }
 
-
-.footer-item:hover p{
-  color:black
+.footer-item:hover p {
+  color: black;
 }
 
-.footer-item div{
-  color:black;
+.footer-item div {
+  color: black;
   font-size: 13px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: bold;
-} 
+}
 
-.footer-item:hover div{
-  color:rgba(0,128,128,0.8)
-} 
+.footer-item:hover div {
+  color: rgba(0, 128, 128, 0.8);
+}
 
-
-.icons{
-  display:flex;
-  margin:15px 15px 5px 15px;
+.icons {
+  display: flex;
+  margin: 15px 15px 5px 15px;
   justify-content: space-between;
   align-items: center;
 }
 
-.product-title{
-  height:60px;
-  padding:10px;
+.product-title {
+  height: 60px;
+  padding: 10px;
   margin: 25px 0px 10px 0px;
-  background-color: rgba(128,128,128,0.1);
+  background-color: rgba(128, 128, 128, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
   font-weight: bolder;
-  
 }
 
-.product-title span{
+.product-title span {
   font-size: 15px;
   font-weight: bolder;
-  color:rgb(37, 167, 167);
+  color: rgb(37, 167, 167);
   text-align: right;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
-.desc{
-  color:darkgrey;
+.desc {
+  color: darkgrey;
   font-size: 13px;
   font-weight: 500;
-  padding:5px 0px 0px 5px;
+  padding: 5px 0px 0px 5px;
 }
-.desc p{
-  font-family: 'Urbanist', sans-serif;
+.desc p {
+  font-family: "Urbanist", sans-serif;
   font-weight: bold;
 }
 
-
-
-.desc div{
-  color:black;
-  font-weight:bolder;
+.desc div {
+  color: black;
+  font-weight: bolder;
   font-size: 12px;
 }
 
-.amt{
-  margin:10px 5px 0px 0px;
-  display:flex;
+.amt {
+  margin: 10px 5px 0px 0px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 11px;
-  
 }
 
-#rate{
+#rate {
   font-size: 11px;
-  color:darkgrey;
+  color: darkgrey;
   margin-right: 40px;
 }
 
 .likeStyle {
-  color:red;
+  color: red;
   transform: scale(1.1);
   transition: all 0.5s ease;
 }
 
-.slide{
-  background-image:url('./img/homepage1.jpg');
+.slide {
+  background-image: url("./img/homepage1.jpg");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   animation: slideshow 8s ease-in-out 2s infinite reverse;
-  
 }
 
 @keyframes slideshow {
   0% {
     background-position-x: 100%;
-    background-image:url('./img/homepage1.jpg');
-    
+    background-image: url("./img/homepage1.jpg");
   }
   25% {
     background-position-x: 0%;
-    background-image:url('./img/homepage1.jpg');
-    
+    background-image: url("./img/homepage1.jpg");
   }
-  50%{
+  50% {
     background-position-x: 100%;
-    background-image:url('./img/homepage2.jpg');
-    
+    background-image: url("./img/homepage2.jpg");
   }
-  100%{
+  100% {
     background-position-x: 0% 0;
-    background-image:url('./img/homepage2.jpg');
-    
+    background-image: url("./img/homepage2.jpg");
   }
-
 }
 
-.nav-link{
+.nav-link {
   text-decoration: none;
-  
 }
-.review{
-  color:darkgrey;
-}
-
-.review:hover{
-  color:teal;
-  border-bottom:2px solid teal;
+.review {
+  color: darkgrey;
 }
 
-.desc-review{
-  color:darkgrey;
-  
+.review:hover {
+  color: teal;
+  border-bottom: 2px solid teal;
 }
 
-.desc-review span{
-  color:black;
-  margin-left:7px;
+.desc-review {
+  color: darkgrey;
 }
 
-.cart{
-  font-size:13px;
-  color:darkgrey;
-  font-family:'Urbanist', sans-serif;
+.desc-review span {
+  color: black;
+  margin-left: 7px;
+}
+
+.cart {
+  font-size: 13px;
+  color: darkgrey;
+  font-family: "Urbanist", sans-serif;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin:20px 15px 20px 15px;
+  margin: 20px 15px 20px 15px;
 }
 
-.cart p{
-  color:teal;
+.cart p {
+  color: teal;
   font-size: 25px;
 }
 
-.grow{
+.grow {
   -webkit-animation: fade 3s ease-in-out;
-  animation: fade 3s ease-in-out;
+  animation: fade 1s ease-in-out;
 }
 
-
 @-webkit-keyframes fade {
-  0% {opacity: 1;transform: scale(1);}
-  25% {opacity: 1;transform: scale(2);}
-  50% {opacity: 0;}
-  75% {opacity: 1;transform: scale(3);}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fade {
-  0% {opacity: 1;transform: scale(1);}
-  25% {opacity: 1;transform: scale(2);}
-  50% {opacity: 0;}
-  75% {opacity: 1;transform: scale(3);}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-#dot{
-  font-size:45px;
+#dot {
+  font-size: 45px;
 }
 
-
-
-.details{
+.details {
   -webkit-animation: fade 1s ease-in;
   animation: flash 1s ease-in;
   margin-bottom: 20px;
 }
 
 @-webkit-keyframes flash {
-  0% {opacity: 0;background-color: whitesmoke;}
-  50% {opacity: 0;background-color: whitesmoke;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+    background-color: whitesmoke;
+  }
+  50% {
+    opacity: 0;
+    background-color: whitesmoke;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes flash {
-  0% {opacity: 0;background-color: whitesmoke;}
-  50% {opacity: 0;background-color: whitesmoke;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+    background-color: whitesmoke;
+  }
+  50% {
+    opacity: 0;
+    background-color: whitesmoke;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.show{
-  display:'block'
+.show {
+  display: "block";
 }
 
-.hide{
-  display: 'none';
+.hide {
+  display: "none";
 }
